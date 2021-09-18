@@ -1,0 +1,253 @@
+/* default Code */
+body{
+  font-family: 'Spartan', sans-serif;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  margin-left: -4px;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* Web Start */
+header{
+  background-color: rgba(170, 170, 170, 0.4);
+  height: 90px;
+  line-height: 90px;
+}
+.logo img {
+  width: 110px;
+}
+.menu{
+  z-index: 11;
+}
+.menu ul{}
+.menu ul li{
+  display: inline-block;
+  position: relative;
+}
+.menu ul li a {
+  color: black;
+  font-weight: 500;
+  padding: 0 20px;
+
+}
+
+.menu ul li::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  position: absolute;
+  bottom: 1px;
+  left: 18px;
+  background-color: #3763eb;
+  transform: scale(0);
+  transition: .4s;
+  transform-origin: left;
+}
+.menu ul li:hover::before{
+  transform: scale(1);
+}
+.menu ul li a:hover{}
+.getbtn a {
+  border: 1px solid #ede8e8;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: .4s;
+  background-color: #fff;
+}
+
+.getbtn a:hover{
+  background-color: #3763eb;
+  color: #fff;
+  border: 1px solid #3763eb;
+}
+/* dropdown */
+.menu ul li{
+  position: relative;
+}
+.menu ul li ul{
+  background:#fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+}
+.menu ul li:hover > ul{
+  visibility: visible;
+  opacity: 1;
+}
+.menu ul li ul li{
+  display: block;
+}
+.menu ul li ul li a{
+  background-color: #3763eb;
+  color: #fff;
+  padding-top: 10px ;
+  padding-bottom: 10px ;
+  padding-right: 100px;
+}
+/* banner */
+
+.banner{
+  height: 80vh;
+  position: relative;
+  z-index: -1;
+}
+.banner-clip::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./img/hero-image.jpg) right no-repeat;
+  background-size: contain;
+  clip-path: circle(57.7% at 63% 32%);
+}
+.banner-clip{
+  position: relative;
+
+  height: 80vh;
+}
+.bancon {
+  margin-left: 120px;
+  padding-right: 30px;
+}
+.bancon h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.getvbtn{
+  margin-top: 50px;
+}
+.getvbtn a{
+  font-weight: 600;
+  background: #3763eb;
+  border-radius: 30px;
+  color: #fff;
+  padding: 15px 30px;
+  transition: .4s;
+}
+.getvbtn a:hover{
+  background: #fff;
+  color: #3763eb;
+  border: 1px solid #3763eb;
+}
+.divid{
+  height: 3px;
+  width: 50px;
+  background-color: #3763eb;
+  transition: .4s;
+}
+.service{
+  margin-top: 200px;
+}
+.ser h5{
+  font-size: 20px;
+  color: #3763eb;
+  margin-bottom: 20px;
+}
+.ser h3{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.sercice-box{
+  margin: 50px 0;
+}
+.service-single{
+  background-color: #eaf3fc;
+  padding: 50px 30px;
+  border-radius: 20px;
+  transition: .4s;
+}
+.service-single:hover{
+  background-color: #3763eb;
+  transform: scale(1.1);
+  color: #fff;
+}
+.service-single:hover i{
+  background-color: #fff;
+  color: #3763eb;
+}
+.service-single:hover .divid{
+  width: 90px;
+  background-color: #fff;;
+}
+.service-single:hover p{
+  color: #fff;
+}
+.service-single h5{
+  font-weight: 600;
+}
+.service-single p{
+  color: #b0b2c5;
+}
+.service-single i {
+  background-color: #3763eb;
+  color: #fff;
+  font-size: 35px;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 12px 0;
+  border-radius: 30px 30px 30px 0;
+}
+.bootom{
+  background: url(./img/video-bg.jpg) center no-repeat;
+  padding: 100px 0;
+  background-size: cover;
+  background-color: #0b131b;
+  background-blend-mode: overlay;
+}
+.bdiv{
+  height: 3px ;
+  width: 100px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.foot h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.foot h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.foot p{
+  margin-bottom: 100px;
+}
+.icon i{
+  font-size: 20px;
+  background-color: #fff;
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  color: #3763eb;
+  position: relative;
+}
